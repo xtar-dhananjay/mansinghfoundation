@@ -1,0 +1,135 @@
+#homeWelcome{
+    position: relative;
+}
+
+#homeWelcome video{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(40%) contrast(120%);
+}
+
+#homeWelcomeText{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+#homeWelcomeText h2{
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--main-color);
+    text-align: center;
+}
+
+#homeWelcomeText p{
+    font-size: 15px;
+    color: var(--white-color);
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#homeWelcomeText div{
+    margin-top: 20px;
+}
+
+#homeWelcomeText button{
+    width: 150px;
+    height: 35px;
+    border: 1px solid var(--main-color);
+    background: transparent;
+    border-radius: 50px;
+    color: var(--black-color);
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+
+#homeWelcomeText #HWDonateBtn{
+    background: var(--main-color);
+}
+
+#homeWelcomeText #HWContactBtn{
+    color: var(--white-color);
+}
+
+#homeWelcomeText #HWContactBtn:hover{
+    color: var(--black-color);
+    background: var(--main-color);
+}
+
+/* feature cards */
+#homeContainer{
+    display: flex;
+    width: 1200px;
+    max-width: 100%;
+    margin: 50px auto 100px;
+    padding: 0 20px;
+}
+
+#featureCards{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#featureCards .fCard{
+    /* background: lightgray; */
+    /* border: 1px solid rgb(243, 243, 243); */
+    width: 350px;
+    padding: 30px 20px;
+    border-radius: 100px 20px;
+    user-select: none;
+}
+
+#featureCards .fCard i{
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+#featureCards .fCard h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--black-color);
+}
+
+#featureCards .fCard p{
+    font-size: 14px;
+    color: #555555;
+}
+
+/* start making responsive */
+@media (max-width: 800px) {
+
+    #featureCards{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    #homeWelcomeText h2{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    #homeWelcomeText p{
+        font-size: 13px;
+        color: var(--white-color);
+        width: 700px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
